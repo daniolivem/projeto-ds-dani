@@ -1,0 +1,42 @@
+/* Estiliza a página de detalhes */
+.product-view-page {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Área principal (galeria + BuyBox) */
+.product-view-main {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.product-view-gallery,
+.product-view-buybox {
+  width: 50%;
+}
+
+/* Tablet (768px–1023px) */
+@media (max-width: 1023px) {
+  .product-view-main {
+    flex-direction: column; /* Empilha galeria e BuyBox */
+    align-items: center;
+  }
+
+  .product-view-gallery,
+  .product-view-buybox {
+    width: 100%;
+  }
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+  .product-view-page {
+    padding: 0.5rem;
+  }
+
+  .product-view-main {
+    gap: 1rem;
+  }
+}

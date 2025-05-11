@@ -1,0 +1,97 @@
+/* Estiliza o carrossel */
+.gallery {
+  position: relative;
+  width: 100%;
+}
+
+/* Área principal do carrossel */
+.gallery-main {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Proporção padrão */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Setas de navegação */
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.gallery-arrow-left {
+  left: 10px;
+}
+
+.gallery-arrow-right {
+  right: 10px;
+}
+
+.gallery-arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.gallery-arrow img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Miniaturas */
+.gallery-thumbs {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+  flex-wrap: wrap; /* Permite quebra em telas menores */
+}
+
+.gallery-thumb {
+  width: 117px;
+  height: 95px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.gallery-thumb.active {
+  border-color: var(--primary);
+}
+
+/* Tablet (768px–1023px) */
+@media (max-width: 1023px) {
+  .gallery-image {
+    aspect-ratio: 4 / 3; /* Ajusta proporção */
+  }
+
+  .gallery-thumb {
+    width: 80px;
+    height: 65px;
+  }
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+  .gallery-image {
+    aspect-ratio: 1 / 1; /* Quadrado em mobile */
+  }
+
+  .gallery-thumbs {
+    gap: 0.25rem;
+  }
+
+  .gallery-thumb {
+    width: 60px;
+    height: 50px;
+  }
+}

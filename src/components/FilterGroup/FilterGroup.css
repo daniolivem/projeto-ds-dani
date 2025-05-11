@@ -1,0 +1,44 @@
+/* Estiliza os grupos de filtros */
+.filter-group {
+  margin-bottom: 1.5rem;
+}
+
+.filter-group h3 {
+  font-size: clamp(12px, 1.5vw, 14px); /* Título responsivo */
+  color: var(--dark-gray-2);
+  margin-bottom: 0.5rem;
+}
+
+/* Opções de filtro */
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(12px, 1.5vw, 14px);
+  color: var(--dark-gray-2);
+}
+
+.filter-option input {
+  width: 22px;
+  height: 22px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+  .filter-group {
+    margin-bottom: 1rem;
+  }
+
+  .filter-option input {
+    width: 18px;
+    height: 18px; /* Inputs menores */
+  }
+}

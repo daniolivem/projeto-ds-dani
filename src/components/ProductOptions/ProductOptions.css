@@ -1,0 +1,47 @@
+/* Estiliza as opções de produto */
+.product-options {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap; /* Permite quebra em telas menores */
+}
+
+/* Cada opção */
+.option {
+  border: 1px solid var(--light-gray-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.option.square {
+  width: 48px;
+  height: 48px;
+  font-size: clamp(20px, 2.5vw, 24px);
+  color: var(--dark-gray-2);
+}
+
+.option.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.option.selected {
+  border: 2px solid var(--primary); /* Destaque na seleção */
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+  .option.square {
+    width: 40px;
+    height: 40px;
+    font-size: clamp(16px, 2vw, 20px); /* Menor em mobile */
+  }
+
+  .option.circle {
+    width: 25px;
+    height: 25px;
+  }
+}

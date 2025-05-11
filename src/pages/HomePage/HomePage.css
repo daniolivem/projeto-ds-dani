@@ -1,0 +1,46 @@
+/* Estiliza a página inicial */
+.home-page {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Seção de coleções */
+.home-collections {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Permite quebra */
+}
+
+.home-collection-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 4 / 3; /* Proporção do Figma */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Tablet (768px–1023px) */
+@media (max-width: 1023px) {
+  .home-collections {
+    flex-direction: column; /* Empilha imagens */
+    align-items: center;
+  }
+
+  .home-collection-image {
+    max-width: 100%;
+  }
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+  .home-page {
+    padding: 0.5rem;
+  }
+
+  .home-collection-image {
+    aspect-ratio: 1 / 1; /* Quadrado em mobile */
+  }
+}

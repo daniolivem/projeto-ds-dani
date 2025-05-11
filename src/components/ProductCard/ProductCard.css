@@ -1,0 +1,46 @@
+/* Estiliza o cartão de produto */
+.product-card {
+  width: 100%;
+  max-width: 292px; /* Largura máxima */
+  text-align: left;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 292 / 321; /* Mantém proporção do Figma */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  font-size: clamp(14px, 1.5vw, 16px); /* Título responsivo */
+  color: var(--dark-gray);
+  margin: 0.5rem 0;
+}
+
+/* Preços */
+.product-card-prices {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.product-card-price,
+.product-card-discount-price {
+  font-size: clamp(20px, 2.5vw, 24px);
+  color: var(--dark-gray);
+}
+
+.product-card-original-price {
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: var(--light-gray-2);
+  text-decoration: line-through;
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+  .product-card {
+    max-width: 100%; /* Ocupa toda a largura */
+  }
+}

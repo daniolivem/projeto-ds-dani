@@ -1,0 +1,94 @@
+/* Estiliza a caixa de compra */
+.buy-box {
+  max-width: 500px;
+  padding: 1rem;
+}
+
+.buy-box h2 {
+  font-size: clamp(24px, 3vw, 32px); /* Título responsivo */
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem;
+}
+
+.buy-box-reference {
+  font-size: clamp(10px, 1.5vw, 12px);
+  color: var(--dark-gray-3);
+  margin-bottom: 0.75rem;
+}
+
+/* Avaliação */
+.buy-box-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.buy-box-stars {
+  background-color: var(--warning);
+  color: var(--white);
+  font-size: clamp(12px, 1.5vw, 14px);
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.buy-box-stars img {
+  width: 14px;
+  height: 14px;
+}
+
+.buy-box-rating-count {
+  font-size: clamp(12px, 1.5vw, 14px);
+  color: var(--light-gray);
+}
+
+/* Preços */
+.buy-box-prices {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.buy-box-price,
+.buy-box-discount-price {
+  font-size: clamp(24px, 3vw, 32px);
+  color: var(--dark-gray-2);
+}
+
+.buy-box-original-price {
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: var(--light-gray-2);
+  text-decoration: line-through;
+}
+
+/* Descrição */
+.buy-box-description {
+  font-size: clamp(12px, 1.5vw, 14px);
+  color: var(--dark-gray-2);
+  margin-bottom: 1.5rem;
+}
+
+/* Botão de compra */
+.buy-box-button {
+  background-color: var(--warning);
+  color: var(--white);
+  font-size: clamp(14px, 1.5vw, 16px);
+  font-weight: bold;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+  .buy-box {
+    max-width: 100%; /* Ocupa toda a largura */
+  }
+}
