@@ -1,6 +1,6 @@
 /* Importa dependências */
 import React from 'react';
-import starIcon from '../../assets/icons/star-icon.svg';
+import StarIcon from '../../assets/icons/star.svg';
 import './BuyBox.css';
 
 /* Componente BuyBox para informações e compra */

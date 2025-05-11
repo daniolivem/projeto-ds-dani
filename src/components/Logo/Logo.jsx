@@ -1,6 +1,6 @@
 /* Importa dependências */
 import React from 'react';
-import logo from '../../assets/logo.svg'; /* Caminho do logo */
+import logo from '../../assets/icons/logo-header.svg'; /* Caminho do logo */
 import './Logo.css';
 
 /* Componente Logo com opção para versão branca */

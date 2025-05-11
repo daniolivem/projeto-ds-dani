@@ -1,0 +1,51 @@
+/* Estiliza as seções de informações no rodapé */
+.info-section {
+  min-width: 150px; /* Garante espaço mínimo para a seção */
+}
+
+/* Título da seção */
+.info-section h3 {
+  font-size: clamp(14px, 1.5vw, 16px); /* Tamanho de fonte responsivo */
+  color: var(--white); /* Cor branca para contraste no fundo escuro */
+  margin-bottom: 1rem; /* Espaçamento inferior */
+  font-weight: bold; /* Peso da fonte */
+}
+
+/* Lista de links */
+.info-section ul {
+  list-style: none; /* Remove marcadores padrão */
+  padding: 0; /* Remove padding padrão */
+}
+
+/* Itens da lista */
+.info-section li {
+  margin-bottom: 0.5rem; /* Espaçamento entre links */
+}
+
+/* Links */
+.info-section a {
+  color: var(--white); /* Cor branca para links */
+  text-decoration: none; /* Remove sublinhado padrão */
+  font-size: clamp(12px, 1.5vw, 14px); /* Fonte responsiva */
+  line-height: 1.8; /* Altura da linha para legibilidade */
+}
+
+/* Efeito hover nos links */
+.info-section a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Media query para mobile (≤ 767px) */
+@media (max-width: 767px) {
+  .info-section {
+    text-align: center; /* Centraliza o conteúdo em telas menores */
+  }
+
+  .info-section h3 {
+    font-size: clamp(12px, 1.5vw, 14px); /* Reduz ligeiramente o título */
+  }
+
+  .info-section a {
+    font-size: clamp(10px, 1.5vw, 12px); /* Reduz a fonte dos links */
+  }
+}
