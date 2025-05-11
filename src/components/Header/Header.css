@@ -1,8 +1,8 @@
 /* Estiliza o cabeçalho */
 .header {
   background-color: var(--white);
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
 
 /* Contêiner principal do cabeçalho */
@@ -17,15 +17,18 @@
 
 /* Barra de busca */
 .search-bar {
-  flex: 1;
   display: flex;
-  border: 1px solid var(--light-gray-2);
-  border-radius: 4px;
+  border: 0 solid var(--light-gray-2); /* Borda sem estilo/linha */
+  border-radius: 8px;
   overflow: hidden;
-  min-width: 200px; /* Garante tamanho mínimo */
+  min-width: 280px; /* Garante tamanho mínimo */
+  width: 559px;
+  height: 60px;
+  flex-shrink: 0;
 }
 
 .search-bar input {
+  background-color: var(--light-gray-3);
   flex: 1;
   border: none;
   padding: 0.75rem;
@@ -49,13 +52,15 @@
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
 .signup-link {
   font-size: clamp(14px, 1.5vw, 16px);
   color: var(--dark-gray-2);
   text-decoration: underline;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .login-button {
@@ -64,18 +69,22 @@
   font-weight: bold;
   font-size: 14px;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 8px;
   text-decoration: none;
   width: 114px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .cart-icon {
   width: 24px;
   height: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* Navegação principal */
