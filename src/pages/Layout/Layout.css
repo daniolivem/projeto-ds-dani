@@ -1,0 +1,25 @@
+/* Estiliza o layout geral */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o layout ocupe toda a altura da tela */
+}
+
+.layout-content {
+  flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+  padding: 2rem; /* Espaçamento interno */
+}
+
+/* Tablet (768px–1023px) */
+@media (max-width: 1023px) {
+  .layout-content {
+    padding: 1.5rem;
+  }
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+  .layout-content {
+    padding: 1rem; /* Reduz padding em mobile */
+  }
+}

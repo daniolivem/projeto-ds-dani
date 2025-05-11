@@ -1,7 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+/* Configuração do Vite para o projeto */
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
+/* Exporta a configuração */
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [react()], /* Plugin para suporte ao React */
+  test: {
+    environment: 'jsdom', /* Ambiente para testes com React */
+    setupFiles: './src/setupTests.js', /* Arquivo de configuração para testes */
+  },
+});

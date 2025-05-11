@@ -1,0 +1,46 @@
+:root {
+  --primary: #c92071; /* Cor primária (rosa) */
+  --secondary: #b5b6f2; /* Cor secundária (roxo claro) */
+  --tertiary: #991956; /* Cor terciária (rosa escuro) */
+  --error: #ee4266; /* Cor de erro (vermelho) */
+  --success: #52ca76; /* Cor de sucesso (verde) */
+  --warning: #f6aa1c; /* Cor de aviso (laranja) */
+  --dark-gray: #1f1f1f; /* Cinza escuro */
+  --dark-gray-2: #474747; /* Cinza médio */
+  --dark-gray-3: #666666; /* Cinza claro */
+  --light-gray: #8f8f8f; /* Cinza mais claro */
+  --light-gray-2: #cccccc; /* Cinza muito claro */
+  --light-gray-3: #f5f5f5; /* Fundo claro */
+  --white: #ffffff; /* Branco */
+}
+/* Estilos globais */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    font-size: clamp(14px, 2vw, 16px); /* Fontes responsívas, adaptáveis ao tamanho da tela ^^, */
+    box-sizing: border-box;
+
+}
+
+    img {
+        max-width: 100%;
+        height: auto; 
+        display: block;
+    }
+
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+@media (max-width: 767px) {
+        body {
+            font-size: clamp(12px, 1.8vw, 14px); 
+        }
+        .container {
+            padding: 0 0.5rem;
+        }
+        

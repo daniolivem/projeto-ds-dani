@@ -1,0 +1,17 @@
+/* Estiliza o logo */
+.logo {
+  width: clamp(200px, 20vw, 253px); /* Largura responsiva */
+  height: auto; /* Mantém proporção */
+}
+
+/* Versão branca para o footer */
+.logo.white {
+  filter: brightness(0) invert(1); /* Inverte para branco */
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+  .logo {
+    width: clamp(150px, 18vw, 200px); /* Reduz tamanho em mobile */
+  }
+}
